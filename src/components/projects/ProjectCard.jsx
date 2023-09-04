@@ -1,4 +1,6 @@
 import React from "react";
+import H4 from "../../layout/H4";
+import H5 from "../../layout/H5";
 
 const ProjectCard = ({ id, src, title, tech, desription }) => {
   return (
@@ -8,11 +10,9 @@ const ProjectCard = ({ id, src, title, tech, desription }) => {
     >
       <img src={src} alt={title} className=" border-b-2" />
       <div className="p-5">
-        <h3 className="uppercase font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-teal-500 dark:from-cyan-300 dark:to-teal-400 text-lg py-2 pt-8 ">
-          {title}
-        </h3>
+        <H4>{title}</H4>
         <p>{desription}</p>
-        <h4 className="italic pt-2">{tech}</h4>
+        <H5>{tech}</H5>
       </div>
     </div>
   );

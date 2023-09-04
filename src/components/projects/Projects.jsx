@@ -3,6 +3,7 @@ import web1 from "/web1.png";
 import web2 from "/web2.png";
 import web6 from "/web6.png";
 import ProjectCard from "./ProjectCard";
+import H3 from "../../layout/H3";
 
 const Projects = () => {
   const projects = [
@@ -37,9 +38,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className=" text-center">
-        <h3 className=" uppercase pt-32 pb-5 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-teal-500  dark:from-cyan-300 dark:to-teal-400 text-3xl sm:text-5xl">
-          Projects
-        </h3>
+        <H3>Projects</H3>
         <p className="text-md py-2 leading-8 ">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis,
           voluptas quisquam neque quas quam temporibus? Minima voluptatem

@@ -5,6 +5,7 @@ import js from "../../assets/js.svg";
 import react from "../../assets/react.svg";
 import tailwindcss from "../../assets/tailwindcss.svg";
 import github from "../../assets/github.svg";
+import H3 from "../../layout/H3";
 
 const Experience = () => {
   const techs = [
@@ -54,9 +55,8 @@ const Experience = () => {
   return (
     <section id="experience">
       <div className=" text-center">
-        <h3 className=" uppercase pt-32 pb-5 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-teal-500  dark:from-cyan-300 dark:to-teal-400 text-3xl sm:text-5xl">
-          Experience
-        </h3>
+        <H3>Experience</H3>
+
         <p className="text-md py-2 leading-8">
           These are the technologies I have worked with so far.
         </p>

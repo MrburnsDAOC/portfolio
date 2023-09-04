@@ -1,5 +1,6 @@
 import React from "react";
 import avatar from "/avatar.jpg";
+import H2 from "../../layout/H2";
 
 const Home = () => {
   return (
@@ -8,10 +9,10 @@ const Home = () => {
       className="min-h-screen flex flex-col justify-center px-20"
     >
       <div className="text-center pb-10 mt-32 ">
-        <h2 className=" uppercase font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-cyan-500 to-teal-500 dark:from-cyan-300 dark:to-teal-400 md:text-8xl">
+        <h1 className=" uppercase font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-cyan-500 to-teal-500 dark:from-cyan-300 dark:to-teal-400 md:text-8xl">
           David Märkisch
-        </h2>
-        <h3 className="text-2xl py-2  md:text-5xl ">Developer</h3>
+        </h1>
+        <H2>Developer</H2>
         <p className="text-md pt-5 leading-8 ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
           eligendi et animi, repudiandae quod, fugit temporibus natus

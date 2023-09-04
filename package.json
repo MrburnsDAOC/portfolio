@@ -9,7 +9,6 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "homepage": "/portfolio",
   "dependencies": {
     "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
