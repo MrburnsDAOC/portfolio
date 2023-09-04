@@ -5,9 +5,9 @@ import { TbBrandGithubFilled } from "react-icons/tb";
 
 const Header = ({ darkMode, setDarkMode }) => {
   const navElements = [
-    { href: "#home", title: "Home" },
-    { href: "#projects", title: "Projects" },
-    { href: "#experience", title: "Experience" },
+    { id: 1, href: "#home", title: "Home" },
+    { id: 2, href: "#projects", title: "Projects" },
+    { id: 3, href: "#experience", title: "Experience" },
   ];
 
   return (
@@ -22,7 +22,10 @@ const Header = ({ darkMode, setDarkMode }) => {
           <ul className="flex items-center gap-8">
             {navElements.map((navElement) => {
               return (
-                <li className="hover:scale-110 duration-500">
+                <li
+                  key={navElement.id}
+                  className="hover:scale-110 duration-500"
+                >
                   <AnchorLink
                     className="font-bold px-4 py-2 cursor-pointer"
                     href={navElement.href}
