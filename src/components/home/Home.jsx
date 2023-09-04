@@ -9,7 +9,7 @@ const Home = () => {
     >
       <div className="text-center pb-10 mt-32 ">
         <h2 className=" uppercase font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-cyan-500 to-teal-500 dark:from-cyan-300 dark:to-teal-400 md:text-8xl">
-          David Märkisch
+          David Märkisch !
         </h2>
         <h3 className="text-2xl py-2  md:text-5xl ">Developer</h3>
         <p className="text-md pt-5 leading-8 ">
