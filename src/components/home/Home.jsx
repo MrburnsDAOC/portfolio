@@ -1,6 +1,7 @@
 import React from "react";
 import avatar from "/avatar.jpg";
 import H2 from "../../layout/H2";
+import Resumee from "../../assets/Resumee-example.pdf";
 
 const Home = () => {
   return (
@@ -29,6 +30,12 @@ const Home = () => {
           quibusdam ratione optio! Consequuntur doloribus sunt sapiente, nobis
           mollitia at quisquam amet porro, eum inventore ratione repellendus.
         </p>
+
+        <a className="max-w-fit mx-auto mt-2" href={Resumee} target="_blank">
+          <button className="uppercase font-bold mx-auto max-w-fit rounded-md p-3 mt-4 text-white bg-gradient-to-r from-cyan-500 to-teal-500 hover:bg-gradient-to-r hover:from-cyan-600 hover:to-teal-600">
+            Resumee
+          </button>
+        </a>
       </div>
 
       <img

@@ -19,7 +19,7 @@ const Header = ({ darkMode, setDarkMode }) => {
               <TbBrandGithubFilled />
             </a>
           </span>
-          <ul className="flex items-center gap-8">
+          <ul className="flex items-center gap-2 md:gap-10">
             {navElements.map((navElement) => {
               return (
                 <li
@@ -35,7 +35,8 @@ const Header = ({ darkMode, setDarkMode }) => {
                 </li>
               );
             })}
-
+          </ul>
+          <ul className="flex items-center gap-8">
             <li className="hover:scale-110 duration-150">
               <BsFillMoonStarsFill
                 onClick={() => setDarkMode(!darkMode)}
