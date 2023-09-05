@@ -5,6 +5,8 @@ import js from "../../assets/js.svg";
 import react from "../../assets/react.svg";
 import tailwindcss from "../../assets/tailwindcss.svg";
 import github from "../../assets/github.svg";
+import bootstrap from "../../assets/bootstrap.svg";
+import sass from "../../assets/sass.svg";
 import H3 from "../../layout/H3";
 
 const Experience = () => {
@@ -49,6 +51,20 @@ const Experience = () => {
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
+    },
+
+    {
+      id: 7,
+      src: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-purple-400",
+    },
+
+    {
+      id: 8,
+      src: sass,
+      title: "Sass",
+      style: "shadow-pink-400",
     },
   ];
 
