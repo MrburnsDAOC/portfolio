@@ -37,7 +37,7 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <div className=" text-center">
+      <div className=" text-center  max-w-screen-lg mx-auto">
         <H3>Projects</H3>
         <p className="text-md py-2 leading-8 ">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis,

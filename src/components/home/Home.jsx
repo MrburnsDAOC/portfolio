@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col justify-center px-20"
+      className="min-h-screen flex flex-col justify-center max-w-screen-lg mx-auto"
     >
       <div className="text-center pb-10 mt-32 ">
         <h1 className=" uppercase font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-cyan-500 to-teal-500 dark:from-cyan-300 dark:to-teal-400 md:text-8xl">
