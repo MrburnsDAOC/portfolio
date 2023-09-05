@@ -54,7 +54,7 @@ const Experience = () => {
 
   return (
     <section id="experience">
-      <div className=" text-center">
+      <div className=" text-center ">
         <H3>Experience</H3>
 
         <p className="text-md py-2 leading-8">
@@ -62,7 +62,7 @@ const Experience = () => {
         </p>
       </div>
 
-      <div className="w-full grid grid-cols-2 gap-8 px-12 pt-8 pb-32  text-center md:grid-cols-3 md:px-0">
+      <div className="mx-auto max-w-6xl w-full grid grid-cols-2 gap-8 px-12 pt-8 pb-32 text-center md:grid-cols-3 md:px-0">
         {techs.map(({ id, src, title, style }) => (
           <div
             key={id}

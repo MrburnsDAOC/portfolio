@@ -7,6 +7,7 @@ const ProjectCard = ({ id, src, title, tech, desription }) => {
     <div
       key={id}
       className="shadow-lg  shadow-gray-500 rounded-xl max-w-xl overflow-hidden cursor-pointer lg:max-w-sm"
+      // hover:scale-105 duration-500
     >
       <img src={src} alt={title} className="border-b-2" />
       <div className="p-5">
