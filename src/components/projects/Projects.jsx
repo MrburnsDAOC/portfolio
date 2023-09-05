@@ -8,34 +8,34 @@ import H3 from "../../layout/H3";
 import { createDeliveryClient } from "@kontent-ai/delivery-sdk";
 
 const Projects = () => {
-  const projects = [
-    {
-      id: 1,
-      src: web1,
-      title: "DCI final project",
-      desription:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia!",
-      tech: "React, CSS, Tailwind",
-    },
+  // const projects = [
+  //   {
+  //     id: 1,
+  //     src: web1,
+  //     title: "DCI final project",
+  //     desription:
+  //       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia!",
+  //     tech: "React, CSS, Tailwind",
+  //   },
 
-    {
-      id: 2,
-      src: web2,
-      title: "Poker logic",
-      desription:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia!",
-      tech: "JS",
-    },
+  //   {
+  //     id: 2,
+  //     src: web2,
+  //     title: "Poker logic",
+  //     desription:
+  //       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia!",
+  //     tech: "JS",
+  //   },
 
-    {
-      id: 3,
-      src: web6,
-      title: "Alpaca farm",
-      desription:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia!",
-      tech: "CSS",
-    },
-  ];
+  //   {
+  //     id: 3,
+  //     src: web6,
+  //     title: "Alpaca farm",
+  //     desription:
+  //       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia!",
+  //     tech: "CSS",
+  //   },
+  // ];
 
   //
 
@@ -53,11 +53,9 @@ const Projects = () => {
       setProjectsData(response.data.items);
     };
     fetchData();
-    console.log("text");
   }, []);
 
   const [projectsData, setProjectsData] = useState();
-  console.log("STATE", projectsData);
 
   //
 
@@ -94,7 +92,6 @@ const Projects = () => {
                 title={project.elements.title.value}
                 desription={project.elements.description.value}
                 tech={project.elements.technologies.value}
-                order={project.elements.order.value}
               />
             ))}
       </div>
