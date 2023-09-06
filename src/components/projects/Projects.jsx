@@ -33,7 +33,7 @@ const Projects = () => {
       title: "Alpaca farm",
       desription:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia!",
-      tech: "CSS",
+      tech: "HTML, CSS, Sass",
     },
   ];
 
