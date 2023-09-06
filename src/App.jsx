@@ -12,6 +12,9 @@ export default function App() {
     <div>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <Main darkMode={darkMode} />
+      {/* Home */}
+      {/* Projects */}
+      {/* Experience */}
       <Footer />
     </div>
   );
