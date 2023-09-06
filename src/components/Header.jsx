@@ -19,7 +19,7 @@ const Header = ({ darkMode, setDarkMode }) => {
               <TbBrandGithubFilled />
             </a>
           </span>
-          <ul className="flex items-center gap-2 md:gap-10 lg:gap-20">
+          <ul className="flex items-center gap-2 md:gap-10 lg:gap-24">
             {navElements.map((navElement) => {
               return (
                 <li
@@ -44,7 +44,7 @@ const Header = ({ darkMode, setDarkMode }) => {
               />
               <BsFillSunFill
                 onClick={() => setDarkMode(!darkMode)}
-                className="cursor-pointer text-2xl  hidden dark:block "
+                className="cursor-pointer text-2xl hidden dark:block"
               />
             </li>
           </ul>
