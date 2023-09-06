@@ -12,6 +12,7 @@ const Projects = () => {
     {
       id: 1,
       src: projectDci,
+      github: "https://github.com/MrburnsDAOC?tab=repositories",
       title: "DCI final project",
       desription:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia!",
@@ -21,6 +22,7 @@ const Projects = () => {
     {
       id: 2,
       src: projectPoker,
+      github: "https://github.com/MrburnsDAOC/carddeck",
       title: "Poker logic",
       desription:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia!",
@@ -30,6 +32,7 @@ const Projects = () => {
     {
       id: 3,
       src: projectAlpaca,
+      github: "https://github.com/MrburnsDAOC/alpaca",
       title: "Alpaca farm",
       desription:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia!",
