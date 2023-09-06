@@ -32,7 +32,7 @@ const Home = () => {
         </p>
 
         <a className="max-w-fit mx-auto mt-2" href={Resumee} target="_blank">
-          <button className="uppercase font-bold mx-auto max-w-fit rounded-md p-3 mt-4 text-white bg-gradient-to-r from-cyan-500 to-teal-500 hover:bg-gradient-to-r hover:from-cyan-600 hover:to-teal-600">
+          <button className="uppercase font-bold mx-auto max-w-fit rounded-md p-3 mt-4 text-white bg-gradient-to-r from-cyan-500 to-teal-500 hover:bg-gradient-to-r hover:from-cyan-600 hover:to-teal-600 hover:scale-105 duration-200">
             Resumee
           </button>
         </a>
@@ -41,7 +41,7 @@ const Home = () => {
       <img
         src={avatar}
         alt="devdave"
-        className=" border-cyan-500 dark:border-cyan-300 border-2 h-52  rounded-full mx-auto lg:h-80"
+        className=" border-cyan-500 dark:border-cyan-300 border-2 h-52 rounded-full mx-auto lg:h-80"
         title="avatar-placeholder"
       />
     </section>
