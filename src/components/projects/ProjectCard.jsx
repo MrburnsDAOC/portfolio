@@ -6,7 +6,7 @@ const ProjectCard = ({ id, src, github, title, tech, desription }) => {
   return (
     <div
       key={id}
-      className="shadow-lg shadow-gray-500 rounded-xl max-w-lg overflow-hidden cursor-pointer hover:scale-105 duration-150 lg:max-w-sm"
+      className="shadow-lg shadow-gray-500 rounded-xl max-w-lg overflow-hidden cursor-pointer hover:scale-105 duration-500 lg:max-w-sm"
       // hover:scale-105 duration-500
     >
       <a href={github} target="_blank">
