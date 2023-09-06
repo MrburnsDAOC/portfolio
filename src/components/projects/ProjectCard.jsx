@@ -6,10 +6,10 @@ const ProjectCard = ({ id, src, title, tech, desription }) => {
   return (
     <div
       key={id}
-      className="shadow-lg  shadow-gray-500 rounded-xl max-w-lg overflow-hidden cursor-pointer lg:max-w-sm"
+      className="shadow-lg shadow-gray-500 rounded-xl max-w-lg overflow-hidden cursor-pointer lg:max-w-sm"
       // hover:scale-105 duration-500
     >
-      <img src={src} alt={title} className="border-b-2" />
+      <img src={src} alt={title} className=" drop-shadow-sm" />
       <div className="p-5">
         <H4>{title}</H4>
         <p>{desription}</p>
