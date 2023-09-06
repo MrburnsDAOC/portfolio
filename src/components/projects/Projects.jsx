@@ -1,15 +1,17 @@
 import React from "react";
-import web1 from "/web1.png";
-import web2 from "/web2.png";
-import web6 from "/web6.png";
+
+import projectDci from "/project-dci.png";
+import projectPoker from "/project-poker.png";
+import projectAlpaca from "/project-alpaca.png";
 import ProjectCard from "./ProjectCard";
+
 import H3 from "../../layout/H3";
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      src: web1,
+      src: projectDci,
       title: "DCI final project",
       desription:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia!",
@@ -18,7 +20,7 @@ const Projects = () => {
 
     {
       id: 2,
-      src: web2,
+      src: projectPoker,
       title: "Poker logic",
       desription:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia!",
@@ -27,7 +29,7 @@ const Projects = () => {
 
     {
       id: 3,
-      src: web6,
+      src: projectAlpaca,
       title: "Alpaca farm",
       desription:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia!",
