@@ -12,8 +12,8 @@ const Header = ({ darkMode, setDarkMode }) => {
 
   return (
     <header className={darkMode ? "dark" : ""}>
-      <div className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-6 fixed w-full">
-        <nav className="uppercase py-8 flex justify-between">
+      <div className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-6 fixed w-full z-50">
+        <nav className="z-50 uppercase py-8 flex justify-between">
           <span className="cursor-pointer text-3xl hover:scale-110 duration-150">
             <a href="https://github.com/MrburnsDAOC" target="_blank">
               <TbBrandGithubFilled />
