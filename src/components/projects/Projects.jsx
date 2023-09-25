@@ -15,7 +15,7 @@ const Projects = () => {
       github: "https://github.com/MrburnsDAOC?tab=repositories",
       title: "DCI final project",
       desription:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia!",
+        "Currently working on my final DCI group project with three of my fellow colleagues. More information coming soon!",
       tech: "React, CSS, Tailwind",
     },
 
@@ -25,7 +25,7 @@ const Projects = () => {
       github: "https://github.com/MrburnsDAOC/carddeck",
       title: "Poker logic",
       desription:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia!",
+        "Some card logic like picking a random card from a deck of cards, shuffling the deck and giving a set number of players two cards each.",
       tech: "JS",
     },
 
@@ -35,7 +35,7 @@ const Projects = () => {
       github: "https://github.com/MrburnsDAOC/alpaca",
       title: "Alpaca farm",
       desription:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, mollitia!",
+        "Project to practice and learn CSS, working together in a small team on github as well as implementing of the design on basis the of a high-fidelity wireframe.",
       tech: "HTML, CSS, Sass",
     },
   ];
@@ -45,12 +45,11 @@ const Projects = () => {
       <div className=" text-center  max-w-screen-lg mx-auto">
         <H3>Projects</H3>
         <p className="text-md py-2 leading-8 ">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis,
-          voluptas quisquam neque quas quam temporibus? Minima voluptatem
-          accusamus voluptas at?
+          Here are some of my latest projects.
         </p>
-        <p className="text-md py-2 leading-8">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, hic.
+        <p className="text-md py-2 leading-8 ">
+          If you are interested in the details of any of the showcased projects
+          simply click the card to view the given project on GitHub.
         </p>
       </div>
 
