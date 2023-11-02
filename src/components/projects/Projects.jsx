@@ -15,7 +15,7 @@ const Projects = () => {
       github: "https://github.com/MrburnsDAOC/portfolio",
       title: "My portfolio page",
       desription:
-        "This very portfolio you are on right now. Feel free to look into the code provided via the link!",
+        "This very portfolio you are on right now. Feel free to take a look into the code provided via the link in the headline!",
       tech: "JS, React, Tailwind",
     },
 
