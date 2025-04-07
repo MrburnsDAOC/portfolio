@@ -1,43 +1,46 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
+import ProjectCard from './ProjectCard';
+import H3 from '../../layout/H3';
 
-import projectDachau from "/tierschutzverein-dachau.png";
-import projectPortfolio from "/project-portfolio.png";
-import projectAlpaca from "/project-alpaca.png";
-import ProjectCard from "./ProjectCard";
-
-import H3 from "../../layout/H3";
+import Contentstack from 'contentstack';
 
 const Projects = () => {
-  const projects = [
-    {
-      id: 1,
-      src: projectDachau,
-      github: "https://github.com/MrburnsDAOC/dci-final-project",
-      title: "Tierschutzverein Dachau",
-      desription:
-        "For our DCI final group project we redesigned the homepage of Tierschutz Dachau, optimising it for mobile use as well.",
-      tech: "React, CSS, Tailwind",
-    },
-    {
-      id: 2,
-      src: projectPortfolio,
-      github: "https://github.com/MrburnsDAOC/portfolio",
-      title: "My portfolio page",
-      desription:
-        "This very portfolio you are on right now. Feel free to take a look into the code provided via the link in the headline!",
-      tech: "JS, React, Tailwind",
-    },
+  const [projectsData, setProjectsData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-    {
-      id: 3,
-      src: projectAlpaca,
-      github: "https://github.com/MrburnsDAOC/alpaca",
-      title: "Alpaca farm",
-      desription:
-        "Project to practice and learn CSS, working together in a small team on github as well as implementing of the design on basis the of a high-fidelity wireframe.",
-      tech: "HTML, CSS, Sass",
-    },
-  ];
+  useEffect(() => {
+    // Initialize the Contentstack SDK
+    const Stack = Contentstack.Stack({
+      api_key: 'blt42d8244abed63102',
+      delivery_token: 'cs2720ba413ceb25dc7e33cb16',
+      environment: 'live',
+    });
+
+    // fetch from Contentstack
+    const fetchData = async () => {
+      try {
+        const Query = Stack.ContentType('project') // all projects from Contentstack
+          .Query()
+          .toJSON();
+        const result = await Query.find();
+        // console.log(result[0]);
+
+        if (result && result[0]) {
+          setProjectsData(result[0]);
+        } else {
+          setProjectsData([]);
+        }
+        setLoading(false); // Stop loading after data is fetched
+      } catch (error) {
+        console.error('Error fetching content:', error);
+        setError('Error fetching data');
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <section id="projects">
@@ -46,20 +49,30 @@ const Projects = () => {
         <p className="text-md py-2 leading-8 ">
           Here are some of my latest projects.
         </p>
-        <p className="text-md py-2 leading-8 ">
+        <p className="text-md py-2 leading-8">
           If you are interested in the details of any of the showcased projects
           simply click the card to view the given project on GitHub.
         </p>
       </div>
 
-      {/* ---- CARDS */}
       <div className="flex flex-wrap justify-center gap-10 p-10">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} {...project} />
-        ))}
+        {projectsData &&
+          projectsData
+            .sort((a, b) => a.position - b.position)
+            .map((project) => (
+              <ProjectCard
+                key={project.uid}
+                github={project.github.href}
+                id={project.uid}
+                src={project.image.url}
+                title={project.title}
+                desription={project.description}
+                tech={project.tech}
+                order={project.position}
+              />
+            ))}
       </div>
     </section>
   );
 };
-
 export default Projects;
