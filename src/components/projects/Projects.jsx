@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import ProjectCard from './ProjectCard';
 import H3 from '../../layout/H3';
 
-import Contentstack from 'contentstack';
+// import Contentstack from 'contentstack';
+import contentstack from '@contentstack/delivery-sdk';
 
 const Projects = () => {
   const [projectsData, setProjectsData] = useState([]);
@@ -11,23 +12,23 @@ const Projects = () => {
 
   useEffect(() => {
     // Initialize the Contentstack SDK
-    const Stack = Contentstack.Stack({
-      api_key: 'blt42d8244abed63102',
-      delivery_token: 'cs2720ba413ceb25dc7e33cb16',
+    const Stack = contentstack.stack({
+      apiKey: 'blt42d8244abed63102',
+      deliveryToken: 'cs2720ba413ceb25dc7e33cb16',
       environment: 'live',
     });
 
     // fetch from Contentstack
     const fetchData = async () => {
       try {
-        const Query = Stack.ContentType('project') // all projects from Contentstack
-          .Query()
-          .toJSON();
+        const Query = Stack.contentType('project') // all projects from Contentstack
+          .entry()
+          .query();
         const result = await Query.find();
         // console.log(result[0]);
 
-        if (result && result[0]) {
-          setProjectsData(result[0]);
+        if (result && result.entries) {
+          setProjectsData(result.entries);
         } else {
           setProjectsData([]);
         }
